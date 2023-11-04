@@ -1,0 +1,27 @@
+.exzo-logo{
+    max-width: 50px;
+    border-radius: 10px;
+    margin: 4px;
+}
+
+.connect-button {
+    background: linear-gradient(to bottom left, #44e8d4, #2ef2b1)!important;
+    border: none;
+    border-radius: 8px;
+    color: rgba(40, 40, 40, 0.894)!important;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .connect-button:hover {
+    background: linear-gradient(to bottom left, #2ef2b188, #44e8d589)!important;
+  }
+
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .footer {
+    margin-top: auto; 
+  }

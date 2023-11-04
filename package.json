@@ -1,0 +1,15 @@
+{
+  "name": "exzo-faucet",
+  "version": "1.0.0",
+  "description": "faucet for exzo testnet",
+  "main": "index.js",
+  "scripts": {
+    "install:client":"cd client && yarn install",
+    "install:server":"cd server && yarn install",
+    "start:client":"cd client && yarn dev",
+    "start:server":"cd server && yarn dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "raebeatrose",
+  "license": "ISC"
+}

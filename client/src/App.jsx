@@ -53,7 +53,7 @@ function App() {
         });
       }else{
         toast({
-          title: "Encountered some error!",
+          title: data.error,
           status: "error",
           duration: 5000,
           isClosable: true,
@@ -79,7 +79,7 @@ function App() {
           </div>
           <Input placeholder='Paste Address' size='lg' width={"65vw"} value={inputAddress} onChange={e=>setInputAddress(e.target.value)}/>
           <br />
-          <Button className='connect-button' onClick={handleClick}>Receive 1000 Test EXZO</Button>
+          <Button className='connect-button' onClick={handleClick}>Receive 10 Test EXZO</Button>
         </div>
 
       <Footer addNetwork={addNetwork} />

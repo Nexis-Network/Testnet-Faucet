@@ -9,7 +9,8 @@ import axios from "axios";
 function App() {
   const toast = useToast();
   const [inputAddress,setInputAddress] = useState('');
-  const FAUCET_ENDPOINT ="http://localhost:3000/faucet";
+  const FAUCET_ENDPOINT ="https://exzo-faucet.vercel.app/faucet";
+  // const FAUCET_ENDPOINT ="http://localhost:8080/faucet";
 
   const addNetwork = async () => {
     try {
@@ -42,6 +43,7 @@ function App() {
       });
     }else{
       const {data} = await axios.post(FAUCET_ENDPOINT,{address:inputAddress})
+      console.log(data)
       if(data.sent){
         toast({
           title: "Sent tokens successfully",

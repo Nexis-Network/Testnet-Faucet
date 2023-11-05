@@ -21,9 +21,6 @@ async function signTransaction(address) {
     gasPrice: ethers.utils.parseUnits("2", 'gwei')
   };
 
-  console.log(tx)
-  console.log(address)
-
   const signedTx = await wallet.sendTransaction(tx);
   console.log('Signed Transaction:', signedTx);
 }
@@ -35,14 +32,14 @@ app.get('/', (req, res) => {
 
 
 
-app.post('/faucet', (req, res) => {
+app.post('/faucet', async(req, res) => {
     try {
         const {address} = req.body;
-        signTransaction(address)
+        await signTransaction(address)
     res.status(200).send({sent:true});
     return;
     } catch (error) {
-        res.status(200).send({sent:false});
+        res.status(200).send({sent:false,error});
     }
 });
 
@@ -50,3 +47,5 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+module.exports=app;

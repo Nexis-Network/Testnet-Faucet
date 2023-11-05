@@ -1,6 +1,10 @@
 # exzo-faucet
 testnet faucet for exzo
 
+<a href="https://exzo-faucet.netlify.app/">Open Faucet</a>
+
+
+
 <img width="960" alt="image" src="https://github.com/raebeatrose4/exzo-faucet/assets/139626898/1f8e6d4c-fb10-4065-954b-61c49faed74a">
 
 # Run Locally

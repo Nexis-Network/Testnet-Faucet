@@ -1,16 +1,13 @@
-# exzo-faucet
-testnet faucet for exzo
+# Nexis-faucet
+testnet faucet for Nexis Network
 
 <a href="https://exzo-faucet.netlify.app/">Open Faucet</a>
 
 
-
-<img width="960" alt="image" src="https://github.com/raebeatrose4/exzo-faucet/assets/139626898/1f8e6d4c-fb10-4065-954b-61c49faed74a">
-
 # Run Locally
 Run the following commands 
 ```
-git clone https://github.com/Exzo-Network/Testnet-Faucet faucet
+git clone https://github.com/Nexis-Network/Testnet-Faucet faucet
 cd faucet
 yarn install:client
 yarn install:server
